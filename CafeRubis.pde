@@ -2,14 +2,24 @@
 //Student number: C16487754
 void setup()
 {
- size(800,800);
+ size(800,600);
  loadData();
+ printProducts();
+ 
 }
 
 ArrayList<Product> products = new ArrayList<Product>();
 
 
 
+
+void draw()
+{
+
+ 
+  
+  
+}
 
 void loadData()
 {
@@ -21,16 +31,26 @@ void loadData()
     products.add(product);
   }
   
-  for(Product a: products)
+}
+
+void printProducts()
+{
+    for(Product a: products)
   {
-    println(a.name);
+    println(a.name, a.price);
+
   }
-  
-  for(int i=0; i<products.size(); i++)
+   for(int i=0; i<products.size(); i++)
   {
    Product a = products.get(i);
-   println(a.name);
-    
+   println(a.name, a.price);
   }
+  
+}
+
+
+void displayProducts()
+{
+  
   
 }
