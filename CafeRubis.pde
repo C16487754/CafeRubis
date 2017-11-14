@@ -5,6 +5,7 @@ void setup()
  size(800,600);
  loadData();
  printProducts();
+
  
 }
 
@@ -15,7 +16,8 @@ ArrayList<Product> products = new ArrayList<Product>();
 
 void draw()
 {
-
+  fill(255);
+  displayProducts();
  
   
   
@@ -51,6 +53,12 @@ void printProducts()
 
 void displayProducts()
 {
+  for(int i = 0; i < products.size() ;i++)
+  {
+    rect(20, (i*75), 200, 70);
+
+  }
+
+    
+ }
   
-  
-}
